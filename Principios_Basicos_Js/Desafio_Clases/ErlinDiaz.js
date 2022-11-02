@@ -23,6 +23,7 @@ class usuario {
 		}
 
 		getBookNames(){
+
 			return this.libros.map(elem => elem.tit)
 		}	
 }
@@ -37,6 +38,8 @@ user.addBook("Los secretos de la mente millonaria", "T. Harv Eker");
 user.addBook("El hombre más rico de Babilonia", "George S. Clason");
 user.addBook("Tus zonas erróneas", "Wayne Dyer");
 
-user.getFullName();
-user.countMascotas();
-user.getBookNames()
+console.log(user.getFullName());
+console.log(user.countMascotas());
+console.log("Mis libros favoritos son: ");
+console.log(user.getBookNames())
+
